@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+        <meta charset="utf-8" />
+        <title>Portfolio landing</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:image" content="" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+    </head>
+    <body>
+        <section id="main">
+            <img src="{% static 'images/spotlight1.svg' %}" class="background" alt="Image" />
+            <header>
+                <section class="wrapper">
+                    <h1 class="left">
+                        <a href="#"
+                            ><img src="{% static 'images/logo.png' %}" alt="Image"
+                        /></a>
+                    </h1>
+                    <nav class="right">
+                        <ul>
+                            <li><a href="#">Work</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Resume</a></li>
+                            <li><a href="#" class="button">Contact</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </header>
+            <section class="spotlight">
+                <section class="wrapper">
+                    <div class="content">
+                        <h1>Hello, I'm Lisa</h1>
+                        <p>
+                            Multifuntional designer/developer based in Bath - a
+                            traditionally trained designer who codes.
+                        </p>
+                        <a href="#" class="button">View work</a>
+                        <ul>
+                            <li>
+                                <a href="#"
+                                    ><img
+                                        src="{% static 'images/dribbble.svg' %}"
+                                        alt="Images"
+                                /></a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><img src="{% static 'images/behance.svg' %}" alt="Images"
+                                /></a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><img
+                                        src="{% static 'images/linkedin.svg' %}"
+                                        alt="Images"
+                                /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <!---(#main > header >section.spotlight)-->
+        <section id="skills">
+            <section class="wrapper">
+                <div class="top">
+                    <h2>Things I Do</h2>
+                </div>
+                <div class="bottom">
+                    <div class="items1">
+                        <div class="left">
+                            <img src="{% static 'images/strategy.svg' %}" alt="Images" />
+                        </div>
+                        <div class="right">
+                            <h4>Strategy</h4>
+                            <p>
+                                There's no style over substance here. I bring
+                                together form and the function to create
+                                something that looks good and performs
+                                brilliantly. Simple
+                            </p>
+                        </div>
+                    </div>
+                    <div class="items2">
+                        <div class="left">
+                            <img src="{% static 'images/information.svg' %}" alt="Images" />
+                        </div>
+                        <div class="right">
+                            <h4>Information Architecture</h4>
+                            <p>
+                                It's about organizing the content and flow of a
+                                website based on research and planning.
+                                Eventually I come up with a structure/design
+                                thta balance the user's desires with the
+                                business needs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="items3">
+                        <div class="left">
+                            <img src="{% static 'images/design.svg' %}" alt="Images" />
+                        </div>
+                        <div class="right">
+                            <h4>Design & Development</h4>
+                            <p>
+                                As a designer and developer, I understand the
+                                perfect user interface should look good and work
+                                even better. A longside my clients, I uncover
+                                problems and solve them. In short, I create
+                                border online experiences.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!---(#skills >section.wrapper)-->
+        <section id="works">
+            <section class="wrapper">
+                <div class="top">
+                    <h2>Recent Work</h2>
+                </div>
+                <div class="middle">
+                    <ul>
+                        <li><img src="{% static 'images/project1.jpg' %}" alt="Image" /></li>
+                        <li><img src="{% static 'images/project2.jpg' %}" alt="Image" /></li>
+                        <li><img src="{% static 'images/project3.jpg' %}" alt="Image" /></li>
+                        <li><img src="{% static 'images/project4.jpg' %}" alt="Image" /></li>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <a href="#" class="button">View Work</a>
+                </div>
+            </section>
+        </section>
+        <!---(#works >section.wrapper)-->
+        <section id="project">
+            <section class="wrapper">
+                <div class="content">
+                    <h2>Ready to make something amazing?</h2>
+                    <a href="#" class="button">Start a New Project</a>
+                    <ul>
+                        <li>
+                            <a href="#"
+                                ><img src="{% static 'images/dribbble.svg' %}" alt="Images"
+                            /></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><img src="{% static 'images/behance.svg' %}" alt="Images"
+                            /></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><img src="{% static 'images/linkedin.svg' %}" alt="Images"
+                            /></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <img src="{% static 'images/spotlight.svg' %}" class="background" alt="Images" />
+        </section>
+        <!---(#projects >section.wrapper)-->
+    </body>
+</html>
